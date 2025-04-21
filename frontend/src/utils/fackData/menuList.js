@@ -497,33 +497,6 @@ export const menuList = [
             },
         ]
     },
-    {
-        id: 11,
-        name: "help center",
-        path: "#",
-        icon: 'feather-life-buoy',
-        dropdownMenu: [
-            {
-                id: 1,
-                name: "Support",
-                path: "https://wrapbootstrap.com/user/theme_ocean",
-                target:"_blank",
-                subdropdownMenu: false
-            },
-            {
-                id: 2,
-                name: "KnowledgeBase",
-                path: "/help/knowledgebase",
-                subdropdownMenu: false
-            },
-            {
-                id: 3,
-                name: "Documentations",
-                path: "https://duralux-next-doc.vercel.app/",
-                target:"_blank",
-                subdropdownMenu: false
-            }
-        ]
-    },
+  
     
 ]
