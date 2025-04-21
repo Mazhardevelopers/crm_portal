@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { CiLock } from 'react-icons/ci';
+
 import SelectDropdown from '@/components/shared/SelectDropdown';
 import { FiCalendar, FiMapPin, FiTag } from 'react-icons/fi';
 import { add, format, isValid } from 'date-fns';

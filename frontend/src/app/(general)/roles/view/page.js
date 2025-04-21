@@ -1,6 +1,6 @@
 import React from "react";
 import PageHeader from "@/components/shared/pageHeader/PageHeader";
-import RolesViewHeader from "@/components/rolesView/RolesViewHeader";
+import RolesViewHeader from "@/components/rolesView/RoleViewHeader";
 import RolesContent from "@/components/rolesView/RoleContent";
 
 const page = () => {

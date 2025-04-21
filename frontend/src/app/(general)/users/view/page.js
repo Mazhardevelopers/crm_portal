@@ -1,6 +1,6 @@
 import React from "react";
 import PageHeader from "@/components/shared/pageHeader/PageHeader";
-import UsersViewHeader from "@/components/usersView/UsersViewHeader";
+import UsersViewHeader from "@/components/usersView/UserViewHeader";
 import UsersContent from "@/components/usersView/UserContent";
 
 const page = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import PageHeader from "@/components/shared/pageHeader/PageHeader";
-import SalesViewHeader from "@/components/salesView/SalesViewHeader";
-import SalesContent from "@/components/salesView/SalesContent";
+import SalesViewHeader from "@/components/salesView/SaleViewHeader";
+import SalesContent from "@/components/salesView/SaleContent";
 
 const page = () => {
     return (
