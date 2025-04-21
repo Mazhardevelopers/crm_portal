@@ -67,6 +67,354 @@ const customerCreatePrivacyOptions = [
     { value: 'followme', label: 'People Follow Me', icon: 'feather-eye' },
     { value: 'customselectever', label: 'Custom Select Ever', icon: 'feather-settings' }
 ];
+
+const crmViewOptions = [
+    { value: "sms", label: "SMS", icon: "feather-smart-phone" },
+    { value: "push", label: "Push", icon: "feather-bell" },
+    { value: "email", label: "Email", icon: "feather-mail" },
+    { value: "repeat", label: "Repeat", icon: "feather-repeat" },
+    { value: "deactivate", label: "Deactivate", icon: "feather-bell-off" },
+    { value: "sms-push", label: "SMS + Push", icon: "feather-smart-phone" },
+    { value: "email-push", label: "Email + Push", icon: "feather-mail" },
+    { value: "sms-email", label: "SMS + Email", icon: "feather-smart-phone" },
+    { value: "sms-push-email", label: "SMS + Push + Email", icon: "feather-smart-phone" },
+]
+
+const crmListTagsOptions = [
+    { value: 'vip', label: 'VIP', color: '#17c666' },
+    { value: 'bugs', label: 'Bugs', color: '#3dc7be' },
+    { value: 'team', label: 'Team', color: '#3454d1' },
+    { value: 'updates', label: 'Updates', color: '#17c666' },
+    { value: 'personal', label: 'Personal', color: '#ffa21d' },
+    { value: 'promotions', label: 'Promotions', color: '#ea4d4d' },
+    { value: 'high-budget', label: 'High Budget', color: '#41b2c4' },
+    { value: 'customs', label: 'Customs', color: '#6610f2' },
+    { value: 'low-budget', label: 'Low Budget', color: '#ea4d4d' },
+    { value: 'wholesale', label: 'Wholesale', color: '#3454d1' },
+    { value: 'primary', label: 'Primary', color: '#41b2c4' },
+];
+const crmListStatusOptions = [
+    { value: 'active', label: 'Active', color: '#17c666' },
+    { value: 'inactive', label: 'Inactive', color: '#ffa21d' },
+    { value: 'declined', label: 'Declined', color: '#ea4d4d' },
+];
+const crmCreatePrivacyOptions = [
+    { value: 'onlyme', label: 'Only Me', icon: 'feather-lock' },
+    { value: 'everyone', label: 'Everyone', icon: 'feather-globe' },
+    { value: 'anonymous', label: 'Anonymous', icon: 'feather-users' },
+    { value: 'ifollow', label: 'People I Follow', icon: 'feather-user-check' },
+    { value: 'followme', label: 'People Follow Me', icon: 'feather-eye' },
+    { value: 'customselectever', label: 'Custom Select Ever', icon: 'feather-settings' }
+];
+const permissionViewOptions = [
+    { value: "sms", label: "SMS", icon: "feather-smart-phone" },
+    { value: "push", label: "Push", icon: "feather-bell" },
+    { value: "email", label: "Email", icon: "feather-mail" },
+    { value: "repeat", label: "Repeat", icon: "feather-repeat" },
+    { value: "deactivate", label: "Deactivate", icon: "feather-bell-off" },
+    { value: "sms-push", label: "SMS + Push", icon: "feather-smart-phone" },
+    { value: "email-push", label: "Email + Push", icon: "feather-mail" },
+    { value: "sms-email", label: "SMS + Email", icon: "feather-smart-phone" },
+    { value: "sms-push-email", label: "SMS + Push + Email", icon: "feather-smart-phone" },
+]
+
+const permissionListTagsOptions = [
+    { value: 'vip', label: 'VIP', color: '#17c666' },
+    { value: 'bugs', label: 'Bugs', color: '#3dc7be' },
+    { value: 'team', label: 'Team', color: '#3454d1' },
+    { value: 'updates', label: 'Updates', color: '#17c666' },
+    { value: 'personal', label: 'Personal', color: '#ffa21d' },
+    { value: 'promotions', label: 'Promotions', color: '#ea4d4d' },
+    { value: 'high-budget', label: 'High Budget', color: '#41b2c4' },
+    { value: 'customs', label: 'Customs', color: '#6610f2' },
+    { value: 'low-budget', label: 'Low Budget', color: '#ea4d4d' },
+    { value: 'wholesale', label: 'Wholesale', color: '#3454d1' },
+    { value: 'primary', label: 'Primary', color: '#41b2c4' },
+];
+const permissionListStatusOptions = [
+    { value: 'active', label: 'Active', color: '#17c666' },
+    { value: 'inactive', label: 'Inactive', color: '#ffa21d' },
+    { value: 'declined', label: 'Declined', color: '#ea4d4d' },
+];
+const permissionCreatePrivacyOptions = [
+    { value: 'onlyme', label: 'Only Me', icon: 'feather-lock' },
+    { value: 'everyone', label: 'Everyone', icon: 'feather-globe' },
+    { value: 'anonymous', label: 'Anonymous', icon: 'feather-users' },
+    { value: 'ifollow', label: 'People I Follow', icon: 'feather-user-check' },
+    { value: 'followme', label: 'People Follow Me', icon: 'feather-eye' },
+    { value: 'customselectever', label: 'Custom Select Ever', icon: 'feather-settings' }
+];
+
+const ipaddressViewOptions = [
+    { value: "sms", label: "SMS", icon: "feather-smart-phone" },
+    { value: "push", label: "Push", icon: "feather-bell" },
+    { value: "email", label: "Email", icon: "feather-mail" },
+    { value: "repeat", label: "Repeat", icon: "feather-repeat" },
+    { value: "deactivate", label: "Deactivate", icon: "feather-bell-off" },
+    { value: "sms-push", label: "SMS + Push", icon: "feather-smart-phone" },
+    { value: "email-push", label: "Email + Push", icon: "feather-mail" },
+    { value: "sms-email", label: "SMS + Email", icon: "feather-smart-phone" },
+    { value: "sms-push-email", label: "SMS + Push + Email", icon: "feather-smart-phone" },
+]
+
+const ipaddressListTagsOptions = [
+    { value: 'vip', label: 'VIP', color: '#17c666' },
+    { value: 'bugs', label: 'Bugs', color: '#3dc7be' },
+    { value: 'team', label: 'Team', color: '#3454d1' },
+    { value: 'updates', label: 'Updates', color: '#17c666' },
+    { value: 'personal', label: 'Personal', color: '#ffa21d' },
+    { value: 'promotions', label: 'Promotions', color: '#ea4d4d' },
+    { value: 'high-budget', label: 'High Budget', color: '#41b2c4' },
+    { value: 'customs', label: 'Customs', color: '#6610f2' },
+    { value: 'low-budget', label: 'Low Budget', color: '#ea4d4d' },
+    { value: 'wholesale', label: 'Wholesale', color: '#3454d1' },
+    { value: 'primary', label: 'Primary', color: '#41b2c4' },
+];
+const ipaddressListStatusOptions = [
+    { value: 'active', label: 'Active', color: '#17c666' },
+    { value: 'inactive', label: 'Inactive', color: '#ffa21d' },
+    { value: 'declined', label: 'Declined', color: '#ea4d4d' },
+];
+const ipaddressCreatePrivacyOptions = [
+    { value: 'onlyme', label: 'Only Me', icon: 'feather-lock' },
+    { value: 'everyone', label: 'Everyone', icon: 'feather-globe' },
+    { value: 'anonymous', label: 'Anonymous', icon: 'feather-users' },
+    { value: 'ifollow', label: 'People I Follow', icon: 'feather-user-check' },
+    { value: 'followme', label: 'People Follow Me', icon: 'feather-eye' },
+    { value: 'customselectever', label: 'Custom Select Ever', icon: 'feather-settings' }
+];
+
+const roleViewOptions = [
+    { value: "sms", label: "SMS", icon: "feather-smart-phone" },
+    { value: "push", label: "Push", icon: "feather-bell" },
+    { value: "email", label: "Email", icon: "feather-mail" },
+    { value: "repeat", label: "Repeat", icon: "feather-repeat" },
+    { value: "deactivate", label: "Deactivate", icon: "feather-bell-off" },
+    { value: "sms-push", label: "SMS + Push", icon: "feather-smart-phone" },
+    { value: "email-push", label: "Email + Push", icon: "feather-mail" },
+    { value: "sms-email", label: "SMS + Email", icon: "feather-smart-phone" },
+    { value: "sms-push-email", label: "SMS + Push + Email", icon: "feather-smart-phone" },
+]
+
+const roleListTagsOptions = [
+    { value: 'vip', label: 'VIP', color: '#17c666' },
+    { value: 'bugs', label: 'Bugs', color: '#3dc7be' },
+    { value: 'team', label: 'Team', color: '#3454d1' },
+    { value: 'updates', label: 'Updates', color: '#17c666' },
+    { value: 'personal', label: 'Personal', color: '#ffa21d' },
+    { value: 'promotions', label: 'Promotions', color: '#ea4d4d' },
+    { value: 'high-budget', label: 'High Budget', color: '#41b2c4' },
+    { value: 'customs', label: 'Customs', color: '#6610f2' },
+    { value: 'low-budget', label: 'Low Budget', color: '#ea4d4d' },
+    { value: 'wholesale', label: 'Wholesale', color: '#3454d1' },
+    { value: 'primary', label: 'Primary', color: '#41b2c4' },
+];
+const roleListStatusOptions = [
+    { value: 'active', label: 'Active', color: '#17c666' },
+    { value: 'inactive', label: 'Inactive', color: '#ffa21d' },
+    { value: 'declined', label: 'Declined', color: '#ea4d4d' },
+];
+const roleCreatePrivacyOptions = [
+    { value: 'onlyme', label: 'Only Me', icon: 'feather-lock' },
+    { value: 'everyone', label: 'Everyone', icon: 'feather-globe' },
+    { value: 'anonymous', label: 'Anonymous', icon: 'feather-users' },
+    { value: 'ifollow', label: 'People I Follow', icon: 'feather-user-check' },
+    { value: 'followme', label: 'People Follow Me', icon: 'feather-eye' },
+    { value: 'customselectever', label: 'Custom Select Ever', icon: 'feather-settings' }
+];
+
+const userViewOptions = [
+    { value: "sms", label: "SMS", icon: "feather-smart-phone" },
+    { value: "push", label: "Push", icon: "feather-bell" },
+    { value: "email", label: "Email", icon: "feather-mail" },
+    { value: "repeat", label: "Repeat", icon: "feather-repeat" },
+    { value: "deactivate", label: "Deactivate", icon: "feather-bell-off" },
+    { value: "sms-push", label: "SMS + Push", icon: "feather-smart-phone" },
+    { value: "email-push", label: "Email + Push", icon: "feather-mail" },
+    { value: "sms-email", label: "SMS + Email", icon: "feather-smart-phone" },
+    { value: "sms-push-email", label: "SMS + Push + Email", icon: "feather-smart-phone" },
+]
+
+const userListTagsOptions = [
+    { value: 'vip', label: 'VIP', color: '#17c666' },
+    { value: 'bugs', label: 'Bugs', color: '#3dc7be' },
+    { value: 'team', label: 'Team', color: '#3454d1' },
+    { value: 'updates', label: 'Updates', color: '#17c666' },
+    { value: 'personal', label: 'Personal', color: '#ffa21d' },
+    { value: 'promotions', label: 'Promotions', color: '#ea4d4d' },
+    { value: 'high-budget', label: 'High Budget', color: '#41b2c4' },
+    { value: 'customs', label: 'Customs', color: '#6610f2' },
+    { value: 'low-budget', label: 'Low Budget', color: '#ea4d4d' },
+    { value: 'wholesale', label: 'Wholesale', color: '#3454d1' },
+    { value: 'primary', label: 'Primary', color: '#41b2c4' },
+];
+const userListStatusOptions = [
+    { value: 'active', label: 'Active', color: '#17c666' },
+    { value: 'inactive', label: 'Inactive', color: '#ffa21d' },
+    { value: 'declined', label: 'Declined', color: '#ea4d4d' },
+];
+const userCreatePrivacyOptions = [
+    { value: 'onlyme', label: 'Only Me', icon: 'feather-lock' },
+    { value: 'everyone', label: 'Everyone', icon: 'feather-globe' },
+    { value: 'anonymous', label: 'Anonymous', icon: 'feather-users' },
+    { value: 'ifollow', label: 'People I Follow', icon: 'feather-user-check' },
+    { value: 'followme', label: 'People Follow Me', icon: 'feather-eye' },
+    { value: 'customselectever', label: 'Custom Select Ever', icon: 'feather-settings' }
+];
+
+const saleViewOptions = [
+    { value: "sms", label: "SMS", icon: "feather-smart-phone" },
+    { value: "push", label: "Push", icon: "feather-bell" },
+    { value: "email", label: "Email", icon: "feather-mail" },
+    { value: "repeat", label: "Repeat", icon: "feather-repeat" },
+    { value: "deactivate", label: "Deactivate", icon: "feather-bell-off" },
+    { value: "sms-push", label: "SMS + Push", icon: "feather-smart-phone" },
+    { value: "email-push", label: "Email + Push", icon: "feather-mail" },
+    { value: "sms-email", label: "SMS + Email", icon: "feather-smart-phone" },
+    { value: "sms-push-email", label: "SMS + Push + Email", icon: "feather-smart-phone" },
+]
+
+const saleListTagsOptions = [
+    { value: 'vip', label: 'VIP', color: '#17c666' },
+    { value: 'bugs', label: 'Bugs', color: '#3dc7be' },
+    { value: 'team', label: 'Team', color: '#3454d1' },
+    { value: 'updates', label: 'Updates', color: '#17c666' },
+    { value: 'personal', label: 'Personal', color: '#ffa21d' },
+    { value: 'promotions', label: 'Promotions', color: '#ea4d4d' },
+    { value: 'high-budget', label: 'High Budget', color: '#41b2c4' },
+    { value: 'customs', label: 'Customs', color: '#6610f2' },
+    { value: 'low-budget', label: 'Low Budget', color: '#ea4d4d' },
+    { value: 'wholesale', label: 'Wholesale', color: '#3454d1' },
+    { value: 'primary', label: 'Primary', color: '#41b2c4' },
+];
+const saleListStatusOptions = [
+    { value: 'active', label: 'Active', color: '#17c666' },
+    { value: 'inactive', label: 'Inactive', color: '#ffa21d' },
+    { value: 'declined', label: 'Declined', color: '#ea4d4d' },
+];
+const saleCreatePrivacyOptions = [
+    { value: 'onlyme', label: 'Only Me', icon: 'feather-lock' },
+    { value: 'everyone', label: 'Everyone', icon: 'feather-globe' },
+    { value: 'anonymous', label: 'Anonymous', icon: 'feather-users' },
+    { value: 'ifollow', label: 'People I Follow', icon: 'feather-user-check' },
+    { value: 'followme', label: 'People Follow Me', icon: 'feather-eye' },
+    { value: 'customselectever', label: 'Custom Select Ever', icon: 'feather-settings' }
+];
+const unitViewOptions = [
+    { value: "sms", label: "SMS", icon: "feather-smart-phone" },
+    { value: "push", label: "Push", icon: "feather-bell" },
+    { value: "email", label: "Email", icon: "feather-mail" },
+    { value: "repeat", label: "Repeat", icon: "feather-repeat" },
+    { value: "deactivate", label: "Deactivate", icon: "feather-bell-off" },
+    { value: "sms-push", label: "SMS + Push", icon: "feather-smart-phone" },
+    { value: "email-push", label: "Email + Push", icon: "feather-mail" },
+    { value: "sms-email", label: "SMS + Email", icon: "feather-smart-phone" },
+    { value: "sms-push-email", label: "SMS + Push + Email", icon: "feather-smart-phone" },
+]
+
+const unitListTagsOptions = [
+    { value: 'vip', label: 'VIP', color: '#17c666' },
+    { value: 'bugs', label: 'Bugs', color: '#3dc7be' },
+    { value: 'team', label: 'Team', color: '#3454d1' },
+    { value: 'updates', label: 'Updates', color: '#17c666' },
+    { value: 'personal', label: 'Personal', color: '#ffa21d' },
+    { value: 'promotions', label: 'Promotions', color: '#ea4d4d' },
+    { value: 'high-budget', label: 'High Budget', color: '#41b2c4' },
+    { value: 'customs', label: 'Customs', color: '#6610f2' },
+    { value: 'low-budget', label: 'Low Budget', color: '#ea4d4d' },
+    { value: 'wholesale', label: 'Wholesale', color: '#3454d1' },
+    { value: 'primary', label: 'Primary', color: '#41b2c4' },
+];
+const unitListStatusOptions = [
+    { value: 'active', label: 'Active', color: '#17c666' },
+    { value: 'inactive', label: 'Inactive', color: '#ffa21d' },
+    { value: 'declined', label: 'Declined', color: '#ea4d4d' },
+];
+const unitCreatePrivacyOptions = [
+    { value: 'onlyme', label: 'Only Me', icon: 'feather-lock' },
+    { value: 'everyone', label: 'Everyone', icon: 'feather-globe' },
+    { value: 'anonymous', label: 'Anonymous', icon: 'feather-users' },
+    { value: 'ifollow', label: 'People I Follow', icon: 'feather-user-check' },
+    { value: 'followme', label: 'People Follow Me', icon: 'feather-eye' },
+    { value: 'customselectever', label: 'Custom Select Ever', icon: 'feather-settings' }
+];
+
+const headOfficeViewOptions = [
+    { value: "sms", label: "SMS", icon: "feather-smart-phone" },
+    { value: "push", label: "Push", icon: "feather-bell" },
+    { value: "email", label: "Email", icon: "feather-mail" },
+    { value: "repeat", label: "Repeat", icon: "feather-repeat" },
+    { value: "deactivate", label: "Deactivate", icon: "feather-bell-off" },
+    { value: "sms-push", label: "SMS + Push", icon: "feather-smart-phone" },
+    { value: "email-push", label: "Email + Push", icon: "feather-mail" },
+    { value: "sms-email", label: "SMS + Email", icon: "feather-smart-phone" },
+    { value: "sms-push-email", label: "SMS + Push + Email", icon: "feather-smart-phone" },
+]
+
+const headOfficeListTagsOptions = [
+    { value: 'vip', label: 'VIP', color: '#17c666' },
+    { value: 'bugs', label: 'Bugs', color: '#3dc7be' },
+    { value: 'team', label: 'Team', color: '#3454d1' },
+    { value: 'updates', label: 'Updates', color: '#17c666' },
+    { value: 'personal', label: 'Personal', color: '#ffa21d' },
+    { value: 'promotions', label: 'Promotions', color: '#ea4d4d' },
+    { value: 'high-budget', label: 'High Budget', color: '#41b2c4' },
+    { value: 'customs', label: 'Customs', color: '#6610f2' },
+    { value: 'low-budget', label: 'Low Budget', color: '#ea4d4d' },
+    { value: 'wholesale', label: 'Wholesale', color: '#3454d1' },
+    { value: 'primary', label: 'Primary', color: '#41b2c4' },
+];
+const headOfficeListStatusOptions = [
+    { value: 'active', label: 'Active', color: '#17c666' },
+    { value: 'inactive', label: 'Inactive', color: '#ffa21d' },
+    { value: 'declined', label: 'Declined', color: '#ea4d4d' },
+];
+const headOfficeCreatePrivacyOptions = [
+    { value: 'onlyme', label: 'Only Me', icon: 'feather-lock' },
+    { value: 'everyone', label: 'Everyone', icon: 'feather-globe' },
+    { value: 'anonymous', label: 'Anonymous', icon: 'feather-users' },
+    { value: 'ifollow', label: 'People I Follow', icon: 'feather-user-check' },
+    { value: 'followme', label: 'People Follow Me', icon: 'feather-eye' },
+    { value: 'customselectever', label: 'Custom Select Ever', icon: 'feather-settings' }
+];
+const applicantViewOptions = [
+    { value: "sms", label: "SMS", icon: "feather-smart-phone" },
+    { value: "push", label: "Push", icon: "feather-bell" },
+    { value: "email", label: "Email", icon: "feather-mail" },
+    { value: "repeat", label: "Repeat", icon: "feather-repeat" },
+    { value: "deactivate", label: "Deactivate", icon: "feather-bell-off" },
+    { value: "sms-push", label: "SMS + Push", icon: "feather-smart-phone" },
+    { value: "email-push", label: "Email + Push", icon: "feather-mail" },
+    { value: "sms-email", label: "SMS + Email", icon: "feather-smart-phone" },
+    { value: "sms-push-email", label: "SMS + Push + Email", icon: "feather-smart-phone" },
+]
+
+const applicantListTagsOptions = [
+    { value: 'vip', label: 'VIP', color: '#17c666' },
+    { value: 'bugs', label: 'Bugs', color: '#3dc7be' },
+    { value: 'team', label: 'Team', color: '#3454d1' },
+    { value: 'updates', label: 'Updates', color: '#17c666' },
+    { value: 'personal', label: 'Personal', color: '#ffa21d' },
+    { value: 'promotions', label: 'Promotions', color: '#ea4d4d' },
+    { value: 'high-budget', label: 'High Budget', color: '#41b2c4' },
+    { value: 'customs', label: 'Customs', color: '#6610f2' },
+    { value: 'low-budget', label: 'Low Budget', color: '#ea4d4d' },
+    { value: 'wholesale', label: 'Wholesale', color: '#3454d1' },
+    { value: 'primary', label: 'Primary', color: '#41b2c4' },
+];
+const applicantListStatusOptions = [
+    { value: 'active', label: 'Active', color: '#17c666' },
+    { value: 'inactive', label: 'Inactive', color: '#ffa21d' },
+    { value: 'declined', label: 'Declined', color: '#ea4d4d' },
+];
+const applicantCreatePrivacyOptions = [
+    { value: 'onlyme', label: 'Only Me', icon: 'feather-lock' },
+    { value: 'everyone', label: 'Everyone', icon: 'feather-globe' },
+    { value: 'anonymous', label: 'Anonymous', icon: 'feather-users' },
+    { value: 'ifollow', label: 'People I Follow', icon: 'feather-user-check' },
+    { value: 'followme', label: 'People Follow Me', icon: 'feather-eye' },
+    { value: 'customselectever', label: 'Custom Select Ever', icon: 'feather-settings' }
+];
 const leadsGroupsOptions = [
     { value: "group-a", label: "Group-A", color: "#17c666" },
     { value: "group-b", label: "Group-B", color: "#283c50" },
@@ -208,6 +556,42 @@ export {
     customerListTagsOptions,
     customerListStatusOptions,
     customerCreatePrivacyOptions,
+    crmViewOptions,
+    crmListTagsOptions,
+    crmListStatusOptions,
+    crmCreatePrivacyOptions,
+    saleViewOptions,
+    saleListTagsOptions,
+    saleListStatusOptions,
+    saleCreatePrivacyOptions,
+    userViewOptions,
+    userListTagsOptions,
+    userListStatusOptions,
+    userCreatePrivacyOptions,
+    roleViewOptions,
+    roleListTagsOptions,
+    roleListStatusOptions,
+    roleCreatePrivacyOptions,
+    permissionViewOptions,
+    permissionListTagsOptions,
+    permissionListStatusOptions,
+    permissionCreatePrivacyOptions,
+    ipaddressViewOptions,
+    ipaddressListTagsOptions,
+    ipaddressListStatusOptions,
+    ipaddressCreatePrivacyOptions,
+    unitViewOptions,
+    unitListTagsOptions,
+    unitListStatusOptions,
+    unitCreatePrivacyOptions,
+    headOfficeViewOptions,
+    headOfficeListTagsOptions,
+    headOfficeListStatusOptions,
+    headOfficeCreatePrivacyOptions,
+    applicantViewOptions,
+    applicantListTagsOptions,
+    applicantListStatusOptions,
+    applicantCreatePrivacyOptions,
     leadsGroupsOptions,
     taskStatusOptions,
     taskPriorityOptions,
