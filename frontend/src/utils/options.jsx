@@ -405,7 +405,8 @@ const applicantListTagsOptions = [
 const applicantListStatusOptions = [
     { value: 'active', label: 'Active', color: '#17c666' },
     { value: 'inactive', label: 'Inactive', color: '#ffa21d' },
-    { value: 'declined', label: 'Declined', color: '#ea4d4d' },
+    { value: 'blocked', label: 'Blocked', color: '#222' },
+    { value: 'not interested', label: 'Not Interested', color: '#ea4d4d' },
 ];
 const applicantCreatePrivacyOptions = [
     { value: 'onlyme', label: 'Only Me', icon: 'feather-lock' },
@@ -552,56 +553,69 @@ export {
     propsalVisibilityOptions,
     propasalLeadOptions,
     propsalStatusOptions,
+    
     customerViewOptions,
     customerListTagsOptions,
     customerListStatusOptions,
     customerCreatePrivacyOptions,
+    
     crmViewOptions,
     crmListTagsOptions,
     crmListStatusOptions,
     crmCreatePrivacyOptions,
+    
     saleViewOptions,
     saleListTagsOptions,
     saleListStatusOptions,
     saleCreatePrivacyOptions,
+    
     userViewOptions,
     userListTagsOptions,
     userListStatusOptions,
     userCreatePrivacyOptions,
+    
     roleViewOptions,
     roleListTagsOptions,
     roleListStatusOptions,
     roleCreatePrivacyOptions,
+    
     permissionViewOptions,
     permissionListTagsOptions,
     permissionListStatusOptions,
     permissionCreatePrivacyOptions,
+    
     ipaddressViewOptions,
     ipaddressListTagsOptions,
     ipaddressListStatusOptions,
     ipaddressCreatePrivacyOptions,
+    
     unitViewOptions,
     unitListTagsOptions,
     unitListStatusOptions,
     unitCreatePrivacyOptions,
+    
     headOfficeViewOptions,
     headOfficeListTagsOptions,
     headOfficeListStatusOptions,
     headOfficeCreatePrivacyOptions,
+
     applicantViewOptions,
     applicantListTagsOptions,
     applicantListStatusOptions,
     applicantCreatePrivacyOptions,
+
     leadsGroupsOptions,
+    leadsStatusOptions,
+    leadsSourceOptions,
+
     taskStatusOptions,
     taskPriorityOptions,
     taskLabelsOptions,
     taskAssigneeOptions,
-    leadsStatusOptions,
-    leadsSourceOptions,
+    taskTypeOptions,
+
     projectStatusOptions,
     projectBillingOptions,
     projectNotificationsOptions,
     projectRoalOptions,
-    taskTypeOptions
 }

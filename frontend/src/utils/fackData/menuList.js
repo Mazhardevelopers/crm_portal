@@ -20,7 +20,7 @@ export const menuList = [
         ],
     },
     {
-        id: 3,
+        id: 1,
         name: "applicants management",
         path: "#",
         icon: "feather-users",
@@ -40,7 +40,7 @@ export const menuList = [
         ],
     },
     {
-        id: 4,
+        id: 2,
         name: "head offices management",
         path: "#",
         icon: "feather-briefcase",
@@ -60,7 +60,7 @@ export const menuList = [
         ],
     },
     {
-        id: 5,
+        id: 3,
         name: "units management",
         path: "#",
         icon: "feather-gitlab",
@@ -80,7 +80,7 @@ export const menuList = [
         ],
     },
     {
-        id: 6,
+        id: 4,
         name: "Sales management",
         path: "#",
         icon: "feather-bar-chart-2",
@@ -100,14 +100,92 @@ export const menuList = [
         ],
     },
     {
-        id: 7,
+        id: 5,
         name: "CRM",
         path: "/CRM",
         icon: "feather-pie-chart",
         dropdownMenu: false,
     },
     {
+        id: 6,
+        name: "Resources",
+        path: "#",
+        icon: "feather-layers",
+        dropdownMenu: [
+            {
+                id: 1,
+                name: "Resource Applicants",
+                path: "/resources/resource-applicants/list",
+                subdropdownMenu: false,
+            },
+            {
+                id: 2,
+                name: "Direct Resources",
+                path: "/resources/direct-resources/list",
+                subdropdownMenu: false,
+            },
+            {
+                id: 3,
+                name: "Indirect Resources",
+                path: "/resources/indirect-resources/list",
+                subdropdownMenu: false,
+            },
+            {
+                id: 4,
+                name: "Rejected Applicants",
+                path: "/resources/rejected-applicants/list",
+                subdropdownMenu: false,
+            },
+            {
+                id: 5,
+                name: "Blocked Applicants",
+                path: "/resources/blocked-applicants/list",
+                subdropdownMenu: false,
+            },
+            {
+                id: 6,
+                name: "CRM Paid Applicants",
+                path: "/resources/crm-paid-applicants/list",
+                subdropdownMenu: false,
+            },
+            {
+                id: 7,
+                name: "No Job Applicants",
+                path: "/resources/no-job-applicants/list",
+                subdropdownMenu: false,
+            },
+        ],
+    },
+    {
         id: 7,
+        name: "Quality Assurance",
+        path: "#",
+        icon: "feather-award",
+        dropdownMenu: [
+            {
+                id: 1,
+                name: "Applicants",
+                path: "/quality/applicants",
+                subdropdownMenu: false,
+            },
+            {
+                id: 2,
+                name: "Sales",
+                path: "/quality/sales",
+                subdropdownMenu: false,
+            },
+           
+        ],
+    },
+    {
+        id: 8,
+        name: "Regions",
+        path: "/regions",
+        icon: "feather-globe",
+        dropdownMenu: false
+    },
+    {
+        id: 9,
         name: "administrations",
         path: "#",
         icon: "feather-shield",
@@ -115,19 +193,8 @@ export const menuList = [
             {
                 id: 1,
                 name: "IP Addresses",
-                path: "#",
-                subdropdownMenu: [
-                    {
-                        id: 1,
-                        name: "List",
-                        path: "/IP-addresses/list",
-                    },
-                    {
-                        id: 2,
-                        name: "Create",
-                        path: "/IP-addresses/create",
-                    },
-                ],
+                path: "/IP-addresses/list",
+                subdropdownMenu: false
             },
             {
                 id: 2,
@@ -151,24 +218,13 @@ export const menuList = [
             {
                 id: 3,
                 name: "Users Management",
-                path: "#",
-                subdropdownMenu: [
-                    {
-                        id: 1,
-                        name: "List",
-                        path: "/users/list",
-                    },
-                    {
-                        id: 2,
-                        name: "Create",
-                        path: "/users/create",
-                    },
-                ],
+                path: "/users/list",
+                subdropdownMenu: false
             },
         ],
     },
     {
-        id: 8,
+        id: 10,
         name: "Communications",
         path: "#",
         icon: "feather-send",
@@ -188,7 +244,7 @@ export const menuList = [
         ],
     },
     {
-        id: 9,
+        id: 11,
         name: "settings",
         path: "#",
         icon: "feather-settings",
@@ -238,35 +294,11 @@ export const menuList = [
         ],
     },
     {
-        id: 10,
+        id: 12,
         name: "reports",
         path: "#",
         icon: "feather-cast",
         dropdownMenu: [
-            // {
-            //     id: 1,
-            //     name: "Sales Report",
-            //     path: "/reports/sales",
-            //     subdropdownMenu: false
-            // },
-            // {
-            //     id: 2,
-            //     name: "Leads Report",
-            //     path: "/reports/leads",
-            //     subdropdownMenu: false
-            // },
-            // {
-            //     id: 3,
-            //     name: "Project Report",
-            //     path: "/reports/project",
-            //     subdropdownMenu: false
-            // },
-            // {
-            //     id: 4,
-            //     name: "Timesheets Report",
-            //     path: "/reports/timesheets",
-            //     subdropdownMenu: false
-            // },
             {
                 id: 5,
                 name: "Sent Emails Report",
@@ -288,7 +320,7 @@ export const menuList = [
         ],
     },
     {
-        id: 11,
+        id: 13,
         name: "PostCode Finder",
         path: "/postcode-finder",
         icon: "feather-search",
@@ -302,7 +334,7 @@ export const menuList = [
         dropdownMenu: false,
     },
     {
-        id: 12,
+        id: 120,
         name: "applications",
         path: "#",
         icon: "feather-send",
@@ -346,7 +378,7 @@ export const menuList = [
         ],
     },
     {
-        id: 13,
+        id: 130,
         name: "proposal",
         path: "#",
         icon: "feather-at-sign",
@@ -378,7 +410,7 @@ export const menuList = [
         ],
     },
     {
-        id: 14,
+        id: 140,
         name: "payment",
         path: "#",
         icon: "feather-dollar-sign",
@@ -404,7 +436,7 @@ export const menuList = [
         ],
     },
     {
-        id: 15,
+        id: 150,
         name: "customers",
         path: "#",
         icon: "feather-users",

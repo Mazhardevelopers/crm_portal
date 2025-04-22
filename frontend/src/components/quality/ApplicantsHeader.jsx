@@ -1,49 +1,51 @@
 import React from 'react'
-import { FiBarChart, FiUserX, FiBriefcase, FiDownload, FiUpload, FiDollarSign, FiEye, FiFilter, FiFlag, FiPaperclip, FiPlus, FiUserCheck, FiUserMinus, FiUsers } from 'react-icons/fi'
+import { FiBarChart, FiBriefcase, FiDollarSign, FiEye, FiFilter, FiFlag, FiPaperclip, FiPlus, FiUserCheck, FiUserMinus, FiUsers } from 'react-icons/fi'
 import { BsFiletypeCsv, BsFiletypeExe, BsFiletypePdf, BsFiletypeTsx, BsFiletypeXml, BsPrinter } from 'react-icons/bs';
 import Dropdown from '@/components/shared/Dropdown';
 import ApplicantsStatistics from '../widgetsStatistics/ApplicantsStatistics';
 import Link from 'next/link';
-import { FaGithubSquare } from 'react-icons/fa';
 
 const filterAction = [
     { label: "All", icon: <FiEye /> },
+    { label: "Group", icon: <FiUsers /> },
+    { label: "Country", icon: <FiFlag /> },
+    { label: "Invoice", icon: <FiDollarSign /> },
+    { label: "Project", icon: <FiBriefcase /> },
     { label: "Active", icon: <FiUserCheck /> },
     { label: "Inactive", icon: <FiUserMinus /> },
-    { label: "Blocked", icon: <FiFlag /> },
-    { label: "Not Interested", icon: <FiUserX /> },
 ];
-const exportType = [
-    { label: "Export Data", icon: <BsFiletypeCsv /> },
-    { label: "Export Emails", icon: <BsFiletypeCsv /> },
+const fileType = [
+    { label: "PDF", icon: <BsFiletypePdf /> },
+    { label: "CSV", icon: <BsFiletypeCsv /> },
+    { label: "XML", icon: <BsFiletypeXml /> },
+    { label: "Text", icon: <BsFiletypeTsx /> },
+    { label: "Excel", icon: <BsFiletypeExe /> },
+    { label: "Print", icon: <BsPrinter /> },
 ];
 
 const ApplicantsHeader = () => {
     return (
         <>
             <div className="d-flex align-items-center gap-2 page-header-right-items-wrapper">
+                <a href="#" className="btn btn-icon btn-light-brand" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                    <FiBarChart size={16} strokeWidth={1.6} />
+                </a>
                 <Dropdown
                     dropdownItems={filterAction}
                     triggerPosition={"0, 12"}
                     triggerIcon={<FiFilter size={16} strokeWidth={1.6} />}
                     triggerClass='btn btn-icon btn-light-brand'
                     isAvatar={false}
-                    triggerTitle="Filter Options"
                 />
                 <Dropdown
-                    dropdownItems={exportType}
+                    dropdownItems={fileType}
                     triggerPosition={"0, 12"}
-                    triggerIcon={<FiDownload size={16} strokeWidth={1.6} />}
+                    triggerIcon={<FiPaperclip size={16} strokeWidth={1.6} />}
                     triggerClass='btn btn-icon btn-light-brand'
                     iconStrokeWidth={0}
                     isAvatar={false}
-                    triggerTitle="Export"
                 />
-                <a href="#" className="btn btn-icon btn-light-brand" title="Import">
-                    <FiUpload size={16} strokeWidth={1.6} />
-                </a>
-
-                <Link href="/applicants/create" className="btn btn-primary" title="Create New Applicant">
+                <Link href="/applicants/create" className="btn btn-primary">
                     <FiPlus size={16} className='me-2' />
                     <span>Create Applicant</span>
                 </Link>

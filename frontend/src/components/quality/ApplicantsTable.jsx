@@ -1,22 +1,23 @@
 'use client'
 import React, { memo, useEffect, useState } from 'react'
 import Table from '@/components/shared/table/Table';
-import { FiAlertOctagon, FiArchive, FiClock, FiEdit3, FiEye, FiFilePlus, FiFileText, FiMoreHorizontal, FiMoreVertical, FiPrinter, FiSend, FiTrash2 } from 'react-icons/fi'
+import { FiAlertOctagon, FiArchive, FiClock, FiEdit3, FiEye, FiMoreHorizontal, FiMoreVertical, FiPrinter, FiSend, FiTrash2 } from 'react-icons/fi'
 import Dropdown from '@/components/shared/Dropdown';
 import SelectDropdown from '@/components/shared/SelectDropdown';
+import Select from 'react-select'
 import { applicantsTableData } from '@/utils/fackData/applicantsTableData';
-import { FaInfoCircle } from 'react-icons/fa';
-import { FaArrowRotateRight } from 'react-icons/fa6';
+import Link from 'next/link';
 
 
 const actions = [
-    { label: "Edit", icon: <FiEdit3 />, onClick: () => console.log("Edit clicked") },
-    { label: "View", icon: <FiEye />, onClick: () => console.log("View clicked") },
-    { label: "Add Note", icon: <FiFileText />, onClick: () => console.log("Archive clicked") },
+    { label: "Edit", icon: <FiEdit3 /> },
+    { label: "Print", icon: <FiPrinter /> },
+    { label: "Remind", icon: <FiClock /> },
     { type: "divider" },
-    { label: "View Notes History", icon: <FaInfoCircle />, onClick: () => console.log("Report Spam clicked") },
-    { label: "View History", icon: <FaArrowRotateRight />, onClick: () => console.log("Report Spam clicked") },
-    { label: "View No Jobs", icon: <FiFileText />, onClick: () => console.log("Report Spam clicked") },
+    { label: "Archive", icon: <FiArchive /> },
+    { label: "Report Spam", icon: <FiAlertOctagon />, },
+    { type: "divider" },
+    { label: "Delete", icon: <FiTrash2 />, },
 ];
 
 const TableCell = memo(({ options, defaultSelect }) => {
@@ -38,15 +39,42 @@ const ApplicantsTable = () => {
 
     const columns = [
         {
-            accessorKey: 'serial',
-            header: () => 'S.No',
-            cell: (info) => info.row.index + 1,
+            accessorKey: 'id',
+            header: ({ table }) => {
+                const checkboxRef = React.useRef(null);
+
+                useEffect(() => {
+                    if (checkboxRef.current) {
+                        checkboxRef.current.indeterminate = table.getIsSomeRowsSelected();
+                    }
+                }, [table.getIsSomeRowsSelected()]);
+
+                return (
+                    <input
+                        type="checkbox"
+                        className="custom-table-checkbox"
+                        ref={checkboxRef}
+                        checked={table.getIsAllRowsSelected()}
+                        onChange={table.getToggleAllRowsSelectedHandler()}
+                    />
+                );
+            },
+            cell: ({ row }) => (
+                <input
+                    type="checkbox"
+                    className="custom-table-checkbox"
+                    checked={row.getIsSelected()}
+                    disabled={!row.getCanSelect()}
+                    onChange={row.getToggleSelectedHandler()}
+                />
+            ),
             meta: {
                 headerClassName: 'width-30',
             },
         },
+
         {
-            accessorKey: 'applicant_name',
+            accessorKey: 'customer',
             header: () => 'Applicant Name',
             cell: (info) => {
                 const roles = info.getValue();
@@ -67,41 +95,44 @@ const ApplicantsTable = () => {
                 )
             }
         },
-
         {
             accessorKey: 'email',
             header: () => 'Email',
             cell: (info) => <a href="apps-email.html">{info.getValue()}</a>
         },
         {
-            accessorKey: 'postcode',
-            header: () => 'Postcode',
-            cell: (info) => <a href="#">{info.getValue()}</a>
-        },
-        {
-            accessorKey: 'job_title',
-            header: () => 'Title',
-            cell: (info) => <a href="apps-email.html">{info.getValue()}</a>
-        },
-        {
-            accessorKey: 'job_category',
-            header: () => 'Category',
-            cell: (info) => <a href="apps-email.html">{info.getValue()}</a>
+            accessorKey: 'group',
+            header: () => 'Group',
+            cell: (info) => {
+                const x = info.getValue()
+                return (
+                    <Select
+                        defaultValue={x.defaultSelect}
+                        isMulti
+                        name="tags"
+                        options={x.tags}
+                        className="basic-multi-select"
+                        classNamePrefix="select"
+                        hideSelectedOptions={false}
+                        isSearchable={false}
+                        // onChange={(e) => console.log(e)}
+                        formatOptionLabel={tags => (
+                            <div className="user-option d-flex align-items-center gap-2">
+                                <span style={{ marginTop: "1px", backgroundColor: `${tags.color}` }} className={`wd-7 ht-7 rounded-circle`}></span>
+                                <span>{tags.label}</span>
+                            </div>
+                        )}
+                    />
+                )
+            }
         },
         {
             accessorKey: 'phone',
             header: () => 'Phone',
             cell: (info) => <a href="tel:">{info.getValue()}</a>
-        },
-        {
-            accessorKey: 'landline',
-            header: () => 'Landline',
-            cell: (info) => <a href="tel:">{info.getValue()}</a>
-        },
-        {
-            accessorKey: 'source',
-            header: () => 'Source',
-            cell: (info) => <a href="tel:">{info.getValue()}</a>
+            // meta: {
+            //     className: "fw-bold text-dark"
+            // }
         },
         {
             accessorKey: 'date',
@@ -113,23 +144,13 @@ const ApplicantsTable = () => {
             cell: (info) => <TableCell options={info?.getValue().status} defaultSelect={info?.getValue().defaultSelect} />
         },
         {
-            accessorKey: 'notes',
-            header: () => 'Notes',
-            cell: (info) => (
-                <div className="text-center">
-                    <FiFileText
-                        className="cursor-pointer"
-                        size={20}
-                        onClick={() => alert(`Notes: ${info.getValue()}`)}
-                    />
-                </div>
-            ),
-        },
-        {
             accessorKey: 'actions',
             header: () => "Actions",
             cell: info => (
                 <div className="hstack gap-2 justify-content-end">
+                    <Link href="/applicants/view" className="avatar-text avatar-md">
+                        <FiEye />
+                    </Link>
                     <Dropdown dropdownItems={actions} triggerClass='avatar-md' triggerPosition={"0,21"} triggerIcon={<FiMoreHorizontal />} />
                 </div>
             ),
