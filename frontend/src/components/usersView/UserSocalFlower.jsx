@@ -1,5 +1,5 @@
 import React from 'react'
-import { userProfileOption } from './UserSocalMedia'
+import { usersProfileOption } from './UserSocalMedia'
 import Dropdown from '@/components/shared/Dropdown'
 import { FiUserPlus } from 'react-icons/fi'
 import { teamMembersList } from '@/utils/fackData/teamMembersList'
@@ -9,7 +9,7 @@ const UserSocalFlower = () => {
         <div className="card stretch stretch-full">
             <div className="card-header">
                 <h2 className="card-title">Suggestions</h2>
-                <Dropdown dropdownItems={userProfileOption} triggerPosition='25,25' dropdownMenuStyle={"wd-250"} />
+                <Dropdown dropdownItems={usersProfileOption} triggerPosition='25,25' dropdownMenuStyle={"wd-250"} />
             </div>
             <div className="card-body">
                 {

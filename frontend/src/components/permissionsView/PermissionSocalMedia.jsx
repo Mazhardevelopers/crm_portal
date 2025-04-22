@@ -1,7 +1,7 @@
 import React from 'react'
 import { FiFacebook, FiGithub, FiGlobe, FiLinkedin, FiLock, FiSettings, FiTwitter, FiUserCheck, FiUsers, FiYoutube } from 'react-icons/fi'
 import Dropdown from '@/components/shared/Dropdown'
-export const unitsProfileOption = [
+export const permissionsProfileOption = [
     { label: "Only Me", icon: <FiLock /> },
     { label: "Everyone", icon: <FiGlobe /> },
     { label: "Anonymous", icon: <FiUsers /> },
@@ -13,7 +13,7 @@ const PermissionSocalMedia = () => {
         <div className="card stretch stretch-full">
             <div className="card-header">
                 <h5 className="card-title">Social</h5>
-                <Dropdown dropdownItems={unitsProfileOption} triggerPosition='25,25' dropdownMenuStyle={"wd-250"} />
+                <Dropdown dropdownItems={permissionsProfileOption} triggerPosition='25,25' dropdownMenuStyle={"wd-250"} />
             </div>
             <div className="card-body">
                 <div className="d-flex align-items-center mb-3">
